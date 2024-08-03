@@ -1,10 +1,10 @@
-
+import EstiloGlobal from "./styles";
 import Teste from './teste';
 
 
 function App() {
   return (
-   <Teste />
+  <><EstiloGlobal /><Teste /></>
   )
 }
 
