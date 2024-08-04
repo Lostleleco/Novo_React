@@ -1,5 +1,5 @@
 import React from 'react';
-import { P } from './style'; // Ajuste o caminho conforme necessário
+import { P } from './style';
 
 type Props = {
   children: React.ReactNode;

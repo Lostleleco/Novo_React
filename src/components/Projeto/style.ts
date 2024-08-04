@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
-  border: 1px solid #c1c1c1;
+  border: 1px solid ${(props) =>props.theme.corDaBorda};
   padding: 16px;
-  border-radius: 8px; /* Adiciona bordas arredondadas */
-  background-color: #f9f9f9; /* Adiciona uma cor de fundo */
+  border-radius: 8px;
+  background-color:${(props) =>props.theme.corDeFundo};
 `;
 
 export const LinkBotao = styled.a`
-  color: #fff;
+  color:${(props) =>props.theme.corSecundaria};
   font-size: 14px;
-  background-color: #4476bf;
+  background-color:${(props) =>props.theme.corDeFundoBotao};
   text-decoration: none;
   padding: 8px;
   display: inline-block;
