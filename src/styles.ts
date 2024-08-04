@@ -1,24 +1,42 @@
 import styled, { createGlobalStyle } from "styled-components";
 
+// Estilos Globais
 const EstiloGlobal = createGlobalStyle`
-*{
-margin:0;
-padding:0;
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* Adicionado para garantir que padding e border não afetam a largura total */
+  font-family: "Inter", sans-serif;
 }
-`
-;
 
-export default EstiloGlobal
-
-export const Container = styled.div `
-max-width:1024px ;
-width: 100%;
-margin: 0 auto;
-display: grid;
-grid-template-columns: 128px auto;
-column-gap: 56px;
-img {
-  max-width: 100%;
+body {
+  padding-top: 80px;
+  @media (max-width: 768px) {
+    padding-top: 16px;
+  }
 }
-`
+`;
+
+export default EstiloGlobal;
+
+// Container Principal
+export const Container = styled.div`
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 128px auto;
+  column-gap: 56px;
+
+  @media (max-width: 768px) {
+    max-width: 80%;
+    display: block;
+    padding: 0 16px; /* Adicionado padding lateral para dispositivos menores */
+  }
+
+  img {
+    max-width: 100%;
+  }
+`;
+
+// Outras partes do código
