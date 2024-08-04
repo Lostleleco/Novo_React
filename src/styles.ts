@@ -5,8 +5,9 @@ const EstiloGlobal = createGlobalStyle`
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box; /* Adicionado para garantir que padding e border não afetam a largura total */
+  box-sizing: border-box;
   font-family: "Inter", sans-serif;
+  list-style: none;
 }
 
 body {

@@ -28,7 +28,8 @@
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types":"off",
     "react/react-in-jsx-escope":"off",
-    "@typescript-eslint/explicit-module-boundary-types":"off"
+    "@typescript-eslint/explicit-module-boundary-types":"off",
+    "@typescript-eslint/no-unused-vars": "off"
 
   },
   "settings":{
